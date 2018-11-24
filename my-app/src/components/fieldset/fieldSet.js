@@ -5,9 +5,9 @@ const FieldSet = (props) => {
     return (
         <fieldset>
             <legend>{props.legend}</legend>
-            <div class="secao__formulario__grupo">
-                <label for={props.idInput}>{props.label}</label>
-                <input id={props.idInput}type={props.type} value={props.value} />
+            <div className="secao__formulario__grupo">
+                <label htmlFor={props.idInput}>{props.label}</label>
+                <input id={props.idInput}type={props.type} value={props.value} onChange={props.onChange}/>
             </div>
         </fieldset>
     )
